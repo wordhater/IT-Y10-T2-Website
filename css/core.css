@@ -1,0 +1,11 @@
+
+/*fonts*/
+
+@font-face {
+    font-family: "standard";
+    src: url();
+}
+@font-face {
+    font-family: "dyslexic";
+    src: url(/Assets/fonts/dyslexic/OpenDyslexic3-Regular.ttf);
+}
