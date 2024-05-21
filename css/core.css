@@ -3,9 +3,208 @@
 
 @font-face {
     font-family: "standard";
-    src: url();
+    src: url(../Assets/fonts/opensans/OpenSans.ttf);
 }
 @font-face {
     font-family: "dyslexic";
-    src: url(/Assets/fonts/dyslexic/OpenDyslexic3-Regular.ttf);
+    src: url(../Assets/fonts/dyslexic/OpenDyslexic3-Regular.ttf);
+}
+
+* {
+    font-family: var(--font);
+}
+
+/*colour scheme*/
+
+/*default css*/
+:root {
+    --mode: #000000;
+    --inverted-mode: #ffffff;
+    --bgcolor-1: #333333;
+    --bgcolor-1-clear: #3333335f;
+    --accent-gray: #3d3d3d;
+    --accent-gray-clear: #3d3d3d74;
+    --blue-accent: #002f85;
+    --blue-accent-secondary: #0059ff;
+    --primary-text: #ffffff;
+    --secondary-text: #9e9e9e;
+/*other vars for convenience*/
+    --nav-distance: 100px;
+    --font: "standard";
+}
+
+/*light mode css*/
+.lightmode {
+    --mode: #ffffff;
+    --inverted-mode: #000000;
+    --bgcolor-1: #ffffff;
+    --primary-text: #000000;
+}
+
+/*background*/
+#bgVideo {
+    position: fixed;
+    z-index: -1000;
+}
+
+body,html {
+    margin: 0;
+    height: 100%
+}
+
+
+/*title/nav bar*/
+.body-header {
+    background-color: var(--bgcolor-1-clear);
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.body-header h1 {
+    text-align: center;
+    padding-left: 50px;
+}
+
+.nav {
+    display: block;
+    position:absolute;
+    z-index: 0;
+    height: auto;
+    width: 100vw;
+    line-height: 50px;
+    background-color: var(--accent-gray-clear);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    opacity: 0;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    color: var(--secondary-text);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.nav li a:active {
+    background-color: var(--blue-accent-secondary);
+}
+.nav li a:hover {
+    background-color: var(--blue-accent-secondary);
+    font-size: 30px;
+}
+
+#nav-item-1 {
+    padding-left: 65px;
+}
+
+/*animated menu button*/
+
+.menubtn-bar {
+    width: 50px;
+    height: 7px;
+    margin: 6px;
+    background-color: var(--mode);
+}
+#bar-1.active {
+    animation: 1s bar-1-active forwards;    
+}
+#bar-2.active {
+    animation: 0.5s fade-out forwards;   
+}
+#bar-3.active {
+    animation: 1s bar-3-active forwards;   
+}
+.dropdown-button.active {
+    animation: 1s btn forwards;
+}
+#bar-1.inactive {
+    animation: 1s bar-1-inactive forwards;    
+}
+#bar-2.inactive {
+    animation: 1s fade-in forwards;   
+}
+#bar-3.inactive {
+    animation: 1s bar-3-inactive forwards;   
+}
+.dropdown-button.inactive {
+    animation: 1s inactive-btn forwards;
+}
+
+#nav.active {
+    animation: 1s active-nav forwards;
+}
+#nav.inactive {
+    animation: 1s inactive-nav forwards;
+}
+
+/*animations*/
+
+@keyframes fade-out {
+    100% {opacity: 0%;}
+}
+
+@keyframes bar-1-active {
+    10% {transform: translate(0px, 14px);}
+    50% {transform: rotate(-45deg);}
+    100% {transform: translate(0, 12px) rotate(-45deg);}
+}
+
+@keyframes btn {
+    50% {transform: none;}
+    100% {transform: translate(0, var(--nav-distance));}
+}
+
+@keyframes bar-3-active {
+    10% {transform: translate(0px, -14px);}
+    50% {transform: rotate(-45deg);}
+    100% {transform: translate(0, -13px) rotate(45deg);}
+}
+
+@keyframes fade-in {
+    0% {opacity: 0%;}
+    85% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes bar-1-inactive {
+    0% {transform: translate(0, 12px) rotate(-45deg);}
+    50% {transform: rotate(-45deg);}
+    80% {transform: translate(0px, 14px);}
+    100% {transform: translate(0);}
+    
+}
+
+@keyframes inactive-btn {
+    0% {transform: translate(0, var(--nav-distance));}
+    50% {transform: none;}
+    100% {transform: none;}
+}
+
+@keyframes bar-3-inactive {
+    0% {transform: translate(0, -13px) rotate(45deg);}
+    50% {transform: rotate(-45deg);}
+    80% {transform: translate(0px, -14px);}
+    100% {transform: translate(0);}
+}
+
+@keyframes active-nav {
+    0% {opacity: 0;}
+    65% {transform: translate(0); opacity: 0;}
+    100% {transform: translate(0, var(--nav-distance)); opacity: 1;}
+}
+@keyframes inactive-nav {
+    0% {transform: translate(0, var(--nav-distance)); opacity: 1;}
+    35% {transform: translate(0); opacity: 0;}
+    100% {opacity: 0;}
 }
