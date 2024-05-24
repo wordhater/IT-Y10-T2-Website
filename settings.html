@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/settings.css">
 </head>
 <body>
     <div>
@@ -31,8 +32,23 @@
         </div>
         <div class="header-item header-label"><h1>Home</h1></div>
     </header>
+    <div class="headerbg"></div>
 
-
+    <div class="content">
+        <h1>Settings</h1>
+        <form action="update-settings">
+            <h2>Font</h2>
+            <div class="fonts">
+                <input type="radio" class="radio-btn" name="font" value="standard">Standard <br>
+                <input type="radio" class="radio-btn" name="font" value="dyslexic">Dyslexic <br>
+            </div>
+            <h2>Colour Scheme</h2>
+            <div class="colours">
+                <input type="radio" class="radio-btn" name="mode" value="0">Dark mode <br>
+                <input type="radio" class="radio-btn" name="mode" value="1">Light mode <br>
+            </div>
+        </form>
+    </div>
     <footer class="footer">
         <div class="footer-row" id="footer-row-1">
             <h3 class="footer-item" >Business name</h3>
