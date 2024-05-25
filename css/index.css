@@ -1,5 +1,83 @@
 .hero-box {
-    width: 90%;
+    width: 100vw;
+    height: calc(90vw/1.5);
+    max-height: 70vh;
+    min-height: 25vh;
+    /* max-width: 1500px; */
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-repeat: repeat;
+    background-position: center;
     margin: auto;
-    background-color: var(--);
+    background-image: url(../Assets/Home\ page/hero-image.jpg);
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.centered p {
+    position: relative;
+    bottom: 0;
+}
+.hero-box h1 {
+    padding: 10px;
+    padding-top: 3%;
+    padding-left: 20px;
+    font-size: 30px;
+    color: #000000;
+}
+.hero-box h2 {
+    padding: 10px;
+    color: #000000;
+    padding-left: 20px;
+
+}
+.hero-box h2::after, .hero-box h1::after {
+    content: "|";
+}
+
+.dual-container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+.box-container {
+    margin: 2%;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    background-color: var(--bgcolor-1-clear);
+    backdrop-filter: blur(10px);
+    transition: all 2s, background-color 1s ease-in-out, scale 0.3s ease-in-out;
+
+    display: block;
+    text-decoration: none;
+}
+.box-container:hover {
+    background-color: var(--blue-accent);
+    scale: 1.1;
+}
+@media screen and (min-width: 1200px) {
+    
+    .hero-box h1 {
+        padding: 10px;
+        padding-top: 7%;
+        padding-left: 20px;
+        font-size: 400%;
+        color: #000000;
+    }
+    .hero-box h2 {
+        padding: 10px;
+        color: #000000;
+        padding-left: 40px;
+        font-size: 200%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .dual-container {
+        grid-template-columns: auto;
+    }
 }

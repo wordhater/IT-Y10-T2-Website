@@ -1,13 +1,12 @@
 
 .content {
     width: 90%;
-    height: 100%;
     background-color: var(--bgcolor-1-clear);
     margin: auto;
     backdrop-filter: blur(10px);
     border-radius: 30px;
 }
-.content h1 {
+.content h1, p {
     text-align: center;
 }
 .content h2 {

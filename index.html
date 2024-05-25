@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div>
-        <video src="/Assets/Video/background01.mp4" id="bgVideo" loop muted>
+    <div class="background">
+        <video src="Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
             <!--needs fixing file dosent load-->
     </div>
     <nav class="nav" id="nav">
@@ -19,9 +19,9 @@
             <li id="nav-item-3"><a href="cyberbullying/index.html">Cyberbullying</a></li>
             <li id="nav-item-4"><a href="malware.html">Malware</a></li>
             <li id="nav-item-5"><a href="phishing.html">Phishing</a></li>
-            <li id="nav-item-5"><a href="tests/index.html">Test Your Knowledge</a></li>
-            <li id="nav-item-5"><a href="info.html">Info Centre</a></li>
-            <li id="nav-item-5"><a href="settings.html">Settings</a></li>
+            <li id="nav-item-6"><a href="tests/index.html">Test Your Knowledge</a></li>
+            <li id="nav-item-7"><a href="info.html">Info Centre</a></li>
+            <li id="nav-item-8"><a href="settings.html">Settings</a></li>
         </ul>
     </nav>
     <header class="body-header">
@@ -34,17 +34,59 @@
     </header>
     <div class="headerbg"></div>
     <div class="content-container">
-        <div class="hero-box"></div>
-    </div>
+        <div style="height: 15vh;"></div>
+        <section>
+            <div class="hero-box">
+                <h1 id="typing-2"></h1>
+                <h2 id="typing"></h2>
+            </div>
+        </section>
+        <p class="centered">scroll down</p>
+        <section>
+            <div class="dual-container">
+                <a href="cyberbullying/index.html" class="box-container animatable fadeInUp">
+                    <h1>Cyberbullying</h1>
+                    <p>The act of someone repeatedly doing things online that cause detriment to mental health.</p>
+                </a>
+                <a href="malware.html" class="box-container animatable fadeInUp" id="left-1">
+                    <h1>Malware</h1>
+                    <p>A program that runs on your computer that is designed to cause disruption to a device.</p>
 
+                </a>
+                <a href="phishing.html" class="box-container animatable fadeInUp" id="right-1">
+                    <h1>Phishing</h1>
+                    <p>Attacks performed through fake emails, text messages and other forms of communication that are inteded to trick the victim into inserting details into a fake site.</p>
+                </a>
+                <a href="info.html" class="box-container animatable fadeInUp">
+                    <h1>Information Center</h1>
+                    <p>A database of information related to keeping safe online. <br> 
+                       Contains information such as other useful sites, definitions of words and more.</p>
+                </a>
+                <a href="tests/index.html" class="box-container animatable fadeInUp">
+                    <h1>Test your Knowledge</h1>
+                    <p>Test What you know in a series of Quizzes.</p>
+                </a>
+                <a href="about.html" class="box-container animatable fadeInUp">
+                    <h1>About Us</h1>
+                    <p>Information about this website.</p>
+                </a>
+            </div>
+
+        </section>
+    </div>
+    <div style="height: 1000px;"></div>
     <footer class="footer">
-        <div class="footer-row" id="footer-row-1">
+        <div class="footer-contents">
             <h3 class="footer-item" >Business name</h3>
             <a class="footer-item link"href="mailto://rlock58@eq.edu.au">Contact Us</a>
             <a class="footer-item link" target="_blank" href="https://github.com/wordhater/IT-Y10-T2-Website">Github</a>
+            <p class="footer-item">Note: will NOT work on safari</p>
+            <a href="#">Top of page</a>
         </div>
     </footer>
 
 </body>
+<!--I tried to not need this-->
+<script src="scripts/jquery.min.jsm.js"></script>
 <script src="scripts/core.js"></script>
 </html>
