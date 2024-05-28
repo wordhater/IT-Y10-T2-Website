@@ -11,7 +11,7 @@
 }
 
 * {
-    font-family: var(--font);
+    font-family: var(--font), Helvetica;
     color: var(--primary-text);
     box-sizing: border-box;
 }
@@ -63,7 +63,7 @@
 
 body,html {
     margin: 0;
-    height: 100%;
+    height: 0px;
     scroll-behavior: smooth;
     max-width: 100%;
 }
@@ -73,10 +73,6 @@ body,html {
     margin: auto;
 }
 
-
-body {
-    background-color: var(--bgcolor-2);
-}
 
 /*title/nav bar*/
 .headerbg {
@@ -137,7 +133,9 @@ body {
     background-color: var(--blue-accent);
     scale: 1.3;
 }
-
+.nav li a:current {
+    scale: 0.8;
+}
 
 
 /*animated menu button*/
@@ -245,7 +243,7 @@ body {
     margin-top: 30px;
     width: 100%;
     background-color: var(--bgcolor-1);
-
+    clear: both;
 }
 .footer-contents {
     padding: 30px;
