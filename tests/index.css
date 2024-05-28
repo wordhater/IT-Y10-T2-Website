@@ -1,0 +1,41 @@
+.text-flexbox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text-flexbox a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    background-color: var(--bgcolor-1-clear);
+    border-radius: 10px;
+    width: 30%;
+    min-width: 300px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin: 10px;
+    backdrop-filter: blur(5px);
+    transition: all 0.5s ease-out;
+}
+.text-flexbox a:hover {
+    scale: 1.1;
+}
+.content {
+    width: 100%;
+}
+.questions {
+    width: 90vw;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--bgcolor-1-clear);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+.responces ul {
+    list-style: none;
+}
+
+.responces ul li {
+    float: left;
+    padding: 10px;
+}

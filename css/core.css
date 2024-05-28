@@ -85,7 +85,7 @@ body,html {
     display: flex;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
     align-items: center;
     backdrop-filter: blur(10px);
 }
@@ -98,7 +98,7 @@ body,html {
 .nav {
     display: block;
     position:fixed;
-    z-index: 0;
+    z-index: 2;
     height: auto;
     width: 100vw;
     line-height: 50px;
