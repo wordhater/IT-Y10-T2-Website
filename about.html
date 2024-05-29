@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings</title>
+    <title>About us</title>
     <link rel="stylesheet" href="css/core.css">
-    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
     <div class="background">
-        <video src="Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
+        <!-- <video src="Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted> -->
             <!--needs fixing file dosent load-->
     </div>
     <nav class="nav" id="nav">
@@ -30,30 +30,26 @@
             <div id="bar-2" class="menubtn-bar"></div>
             <div id="bar-3" class="menubtn-bar"></div>
         </div>
-        <div class="header-item header-label"><h1>Settings</h1></div>
+        <div class="header-item header-label"><h1>About</h1></div>
     </header>
     <div class="headerbg"></div>
-
     <div class="content">
-        <h1>Settings</h1>
-        <p>Each radio selection must have at least one selected</p>
-        <form action="update-settings">
-            <h2>Font</h2>
-            <div class="fonts">
-                <input type="radio" class="radio-btn" name="font" value="standard">Standard <br>
-                <input type="radio" class="radio-btn" name="font" value="dyslexic">Dyslexic <br>
-            </div>
-            <h2>Colour Scheme</h2>
-            <div class="colours">
-                <input type="radio" class="radio-btn" name="mode" value="0">Dark mode <br>
-                <input type="radio" class="radio-btn" name="mode" value="1">Light mode <br>
-            </div>
-            <h2>Reduce animations</h2>
-            <div class="colours">
-                <input type="checkbox" class="check-btn" name="animations" value="0">Reduce Animations <br>
-            </div>
-        </form>
-        <button class="submit-btn" onclick="process_settings()">Update Settings</button>
+        <div class="hero-box">
+            <h1 id="typing"></h1>
+            <h2 id="typing-2"></h2>
+        </div>
+        <div class="mission">
+            <h1 class="">Our Mission:</h1>
+            <h2 class="">To educate people about the hazards of the internet, from Cyberbullies to Malware and Phishing. While being</h2>
+        </div>
+        <div class="values">
+            <h1>Open Source:</h1>
+            <h2>This site aims to be entirely open source, with code open for viewing and modification on GitHub <a href="https://github.com/wordhater/IT-Y10-T2-Website" target="_blank">here</a>.<br>
+            This is so others can learn from the code of this website to potentially contribute their own websites to the internet</h2>
+            <h1>Accessibility:</h1>
+            <h2>We aim to provide easy to access and easy to understand information for anyone visiting this site, on any device.</h2>
+
+        </div>
     </div>
     <footer class="footer">
         <div class="footer-contents">
@@ -66,4 +62,5 @@
 
 </body>
 <script src="scripts/core.js"></script>
+<script src="scripts/about.js"></script>
 </html>

@@ -3,6 +3,9 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+.test-heading h1 {
+    padding-left: 20px;
+}
 .text-flexbox a {
     padding: 10px;
     text-decoration: none;
@@ -23,7 +26,7 @@
 .content {
     width: 100%;
 }
-.questions {
+.questions, .results-container {
     width: 90vw;
     margin: auto;
     padding: 20px;
@@ -38,4 +41,19 @@
 .responces ul li {
     float: left;
     padding: 10px;
+}
+
+.tick, .cross {
+    width: 30px;
+    margin: 20px;
+}
+.hidden {
+    display: none;
+}
+
+.test-btn {
+    background-color: var(--dark-blue-accent-clear);
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
 }

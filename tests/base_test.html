@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Test</title>
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="background">
-        <video src="../Assets/Video/background01.mp4" id="bgVideo" loop muted>
+        <video src="../Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
     </div>
     <nav class="nav" id="nav">
         <ul>
@@ -29,7 +29,7 @@
             <div id="bar-2" class="menubtn-bar"></div>
             <div id="bar-3" class="menubtn-bar"></div>
         </div>
-        <div class="header-item header-label"><h1>Home</h1></div>
+        <div class="header-item header-label"><h1>Test Your Knowledge</h1></div>
     </header>
     <div class="headerbg"></div>
     <!--Content-->
@@ -39,6 +39,10 @@
             <div id="question-1" class="question">
                 <h1>Q1</h1>
                 <p>question text <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui exercitationem incidunt esse accusantium animi doloremque culpa. Beatae nobis, sint placeat dolorem, alias quos ducimus vero at nihil illum labore magni.</p>
+                <div class="results" id="results-1">
+                    <div id="q1-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q1-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"></div>
+                </div>
                 <div class="responces pick-one">
                     <ul>
                         <li><input type="radio" name="q1" id="q1-0" value="0">Answer</li>
@@ -53,6 +57,10 @@
             <div id="question-2" class="question">
                 <h1>Q2</h1>
                 <p>question text <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui exercitationem incidunt esse accusantium animi doloremque culpa. Beatae nobis, sint placeat dolorem, alias quos ducimus vero at nihil illum labore magni.</p>
+                <div class="results" id="results-2">
+                    <div id="q2-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q2-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"></div>
+                </div>
                 <div class="responces pick-one">
                     <ul>
                         <li><input type="radio" name="q2" id="q2-0" value="0">Answer</li>
@@ -67,6 +75,10 @@
             <div id="question-3" class="question">
                 <h1>Q3</h1>
                 <p>question text <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui exercitationem incidunt esse accusantium animi doloremque culpa. Beatae nobis, sint placeat dolorem, alias quos ducimus vero at nihil illum labore magni.</p>
+                <div class="results" id="results-3">
+                    <div id="q3-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q3-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"></div>
+                </div>
                 <div class="responces pick-one">
                     <ul>
                         <li><input type="checkbox" name="q3" id="q3-0" value="0">Answer</li>
@@ -78,14 +90,17 @@
                 <!--buffer-->       
                 <div style="height: 30px;"></div>
             </div>
-            <button onclick="end_test(0)">Submit</button>
         </div>
-    </div>
+        <div class="results-container">
+            <button onclick="end_test(0)" class="test-btn">Submit</button>
+        </div>
+    </div>  
     <footer class="footer">
         <div class="footer-contents">
             <h3 class="footer-item">Business name</h3>
             <a class="footer-item link"href="mailto://rlock58@eq.edu.au">Contact Us</a>
             <a class="footer-item link" target="_blank" href="https://github.com/wordhater/IT-Y10-T2-Website">Github</a>
+            <a href="#">Top of page</a>
         </div>
     </footer>
 

@@ -30,7 +30,14 @@ function isInViewport(element) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
-
+function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+        if ((new Date().getTime() - start) > milliseconds){
+            break;
+        }
+    }
+}
 
 function activatenav(){
     if (document.getElementById("nav-activator").classList.contains("active")){
@@ -53,6 +60,10 @@ function apply_settings(){
         document.body.classList.add("lightmode")
     } else {
         document.body.classList.remove("lightmode")
+    }
+    // animations
+    if (settings[2] == 1){
+        document.getElementById("bgVideo").pause()
     }
 }
 setTimeout(() => {apply_settings()}, 100)
