@@ -1,5 +1,5 @@
 .hero-box {
-    width: 100vw;
+    width: 100%;
     height: calc(90vw/1.5);
     max-height: 70vh;
     min-height: 25vh;
@@ -34,7 +34,7 @@ body {
     content: "|";
 }
 .mission {
-    width: 100vw;
+    width: 100%;
     height: calc(90vw/1.5);
     max-height: 70vh;
     min-height: 25vh;
@@ -57,7 +57,7 @@ body {
 }
 
 .values {
-    width: 100vw;
+    width: 100%;
     height: calc(90vw/1.5);
     max-height: 70vh;
     min-height: 25vh;
@@ -67,7 +67,7 @@ body {
     background-repeat: repeat;
     background-position: center;
     margin: auto;
-    background-image: url(../Assets/Images/openbanner.jpg);
+    background-image: url(../Assets/Images/values.jpg);
     background-attachment: fixed;
     overflow: hidden;
 }

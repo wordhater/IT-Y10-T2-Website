@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="css/core.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/info.css">
 </head>
 <body>
     <div class="background">
-        <!-- <video src="Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted> -->
-            <!--needs fixing file dosent load-->
+        <video src="Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
     </div>
     <nav class="nav" id="nav">
         <ul>
@@ -30,25 +29,26 @@
             <div id="bar-2" class="menubtn-bar"></div>
             <div id="bar-3" class="menubtn-bar"></div>
         </div>
-        <div class="header-item header-label"><h1>About</h1></div>
+        <div class="header-item header-label"><h1>Info Center</h1></div>
     </header>
     <div class="headerbg"></div>
-    <div class="content">
-        <div class="hero-box">
-            <h1 id="typing"></h1>
-            <h2 id="typing-2"></h2>
+    <div class="content-container">
+        <div class="search-header">
+            <input type="text" placeholder="search" name="search-query" id="search-text" class="text-box">
+            <button class="search-button" onclick="search()">
+                <img src="Assets/Icons/search.svg" alt="Search" class="search-icon">
+            </button>
         </div>
-        <div class="mission">
-            <h1>Our Mission:</h1>
-            <h2>To educate people about the hazards of the internet, from Cyberbullies to Malware and Phishing.</h2>
+        <div class="search-results-container">
+            <div class="list" id="search-list">
+                <!--This div gets filled out by javascript to allow for easy changing of values in bulk check scripts/info.js for more information-->
+            </div>
         </div>
-        <div class="values">
-            <h1 class="animatable fadeInUp">Open Source:</h1>
-            <h2 class="animatable fadeInUp">This site aims to be entirely open source, with code open for viewing and modification on GitHub <a href="https://github.com/wordhater/IT-Y10-T2-Website" target="_blank">here</a>.<br>
-            This is so others can learn from the code of this website to potentially contribute their own websites to the internet</h2>
-            <h1 class="animatable fadeInUp">Accessibility:</h1>
-            <h2 class="animatable fadeInUp">We aim to provide easy to access and easy to understand information for anyone visiting this site, on any device.</h2>
-
+        <hr>
+        <div class="list-container">
+            <div class="list" id="all-list">
+                <!--This div gets filled out by javascript to allow for easy changing of values in bulk check scripts/info.js for more information-->
+            </div>
         </div>
     </div>
     <footer class="footer">
@@ -61,7 +61,7 @@
     </footer>
 
 </body>
+<script type="text/javascript" src="data/terms.json"></script>
 <script src="scripts/core.js"></script>
-<script src="scripts/jquery.min.jsm.js"></script>
-<script src="scripts/about.js"></script>
+<script src="scripts/info.js"></script>
 </html>

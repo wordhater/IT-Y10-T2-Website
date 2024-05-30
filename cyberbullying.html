@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/content.css">
+</head>
+<body>
+    <div class="background">
+        <video src="Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
+    </div>
+    <nav class="nav" id="nav">
+        <ul>
+            <li id="nav-item-1"><a href="index.html">Home</a></li>
+            <li id="nav-item-2"><a href="about.html">About</a></li>
+            <li id="nav-item-3"><a href="cyberbullying.html">Cyberbullying</a></li>
+            <li id="nav-item-4"><a href="malware.html">Malware</a></li>
+            <li id="nav-item-5"><a href="phishing.html">Phishing</a></li>
+            <li id="nav-item-5"><a href="tests/index.html">Test Your Knowledge</a></li>
+            <li id="nav-item-5"><a href="info.html">Info Centre</a></li>
+            <li id="nav-item-5"><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+    <header class="body-header">
+        <div class="header-item dropdown-button button" id="nav-activator" onclick="activatenav()">
+            <div id="bar-1" class="menubtn-bar"></div>
+            <div id="bar-2" class="menubtn-bar"></div>
+            <div id="bar-3" class="menubtn-bar"></div>
+        </div>
+        <div class="header-item header-label"><h1>Home</h1></div>
+    </header>
+    <div class="headerbg"></div>
+    <div class="page-contents">
+        <aside class="side-nav" id="side-nav">
+            <div class="mobile-button" id="mobile-button" onclick="swapnav()">nav</div>
+            <ul>
+                <li><a href="#heading-1">heading</a></li>
+                <li><a href="#heading-2">heading</a></li>
+                <li><a href="#heading-3">heading</a></li>
+                <li><a href="#heading-4">heading</a></li>
+                <li><a href="#heading-5">heading</a></li>
+                <li><a href="#heading-6">heading</a></li>
+            </ul>
+        </aside>
+        <div class="main-content-block">
+            <div class="content">
+                <section id="heading-1">
+                    <h1>heading</h1>
+                    <p></p>
+                </section>
+                <section id="heading-2">
+                    <h1>heading</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni consequuntur illum nulla esse aspernatur atque qui. Sequi dolore architecto voluptatum dolor, doloremque excepturi ut eius omnis voluptatem perspiciatis voluptas ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus maxime maiores necessitatibus quod aliquid debitis aut, dolores porro exercitationem consectetur magnam magni natus voluptatem, totam molestiae sequi perferendis asperiores!</p>
+                    <!-- image break -->
+                    <div class="image-break"><img src="Assets/Home page/hero-image.jpg" alt=""></div>
+                </section>
+                <section id="heading-3">
+                    <h1>heading</h1>
+                    <!--side image-->
+                    <div class="side-image right"><img src="Assets/Home page/hero-image.jpg" alt=""></div>
+                    <p>Lorem ipsum, dolor sit amet <br> 
+                    consectetur adipisicing elit. Magni consequuntur illum nulla esse aspernatur atque qui. Sequi dolore architecto voluptatum dolor, doloremque excepturi ut eius omnis voluptatem perspiciatis voluptas ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus maxime maiores necessitatibus quod aliquid debitis aut, dolores porro exercitationem consectetur magnam magni natus voluptatem, totam molestiae sequi perferendis asperiores!</p>
+                </section>
+                <section id="heading-5">
+                    <h1>heading</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni consequuntur illum nulla esse aspernatur atque qui. Sequi dolore architecto voluptatum dolor, doloremque excepturi ut eius omnis voluptatem perspiciatis voluptas ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus maxime maiores necessitatibus quod aliquid debitis aut, dolores porro exercitationem consectetur magnam magni natus voluptatem, totam molestiae sequi perferendis asperiores!</p>
+                </section>
+            </div>
+            <div class="spacer" style="height: 200px;"></div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-contents">
+            <h3 class="footer-item" >Business name</h3>
+            <a class="footer-item link"href="mailto://rlock58@eq.edu.au">Contact Us</a>
+            <a class="footer-item link" target="_blank" href="https://github.com/wordhater/IT-Y10-T2-Website">Github</a>
+            <a href="#">Top of page</a>
+        </div>
+    </footer>
+
+</body>
+<script src="scripts/core.js"></script>
+<script>
+    function swapnav() {
+        console.log("navtoggle")
+        document.getElementById("side-nav").classList.toggle("navshown")
+    }
+</script>
+</html>

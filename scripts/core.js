@@ -21,23 +21,30 @@ function getCookie(cname) {
     return "";
 }
 
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+function play(id) {
+    var audio = document.getElementById(id);
+    audio.play();
 }
-function sleep(milliseconds) {
-    var start = new Date().getTime();
-    for (var i = 0; i < 1e7; i++) {
-        if ((new Date().getTime() - start) > milliseconds){
-            break;
-        }
+
+function create(htmlStr) {
+    var frag = document.createDocumentFragment(),
+        temp = document.createElement('div');
+    temp.innerHTML = htmlStr;
+    while (temp.firstChild) {
+        frag.appendChild(temp.firstChild);
     }
+    return frag;
 }
+
+// function isInViewport(element) {
+//     const rect = element.getBoundingClientRect();
+//     return (
+//         rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     );
+// }
 
 function activatenav(){
     if (document.getElementById("nav-activator").classList.contains("active")){
@@ -50,7 +57,7 @@ function activatenav(){
     }
 }
 
-
+let animations = true
 function apply_settings(){
     let settings = getCookie('settings').split(",")
     console.log(settings)
@@ -64,6 +71,7 @@ function apply_settings(){
     // animations
     if (settings[2] == 1){
         document.getElementById("bgVideo").pause()
+        animations = false
     }
 }
 setTimeout(() => {apply_settings()}, 100)
