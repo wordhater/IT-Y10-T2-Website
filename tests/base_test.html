@@ -41,7 +41,7 @@
                 <p>question text <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui exercitationem incidunt esse accusantium animi doloremque culpa. Beatae nobis, sint placeat dolorem, alias quos ducimus vero at nihil illum labore magni.</p>
                 <div class="results" id="results-1">
                     <div id="q1-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
-                    <div id="q1-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"></div>
+                    <div id="q1-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a href="../malware.html" class="help-btn"><b>Help</b></a></div>
                 </div>
                 <div class="responces pick-one">
                     <ul>
@@ -59,7 +59,7 @@
                 <p>question text <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui exercitationem incidunt esse accusantium animi doloremque culpa. Beatae nobis, sint placeat dolorem, alias quos ducimus vero at nihil illum labore magni.</p>
                 <div class="results" id="results-2">
                     <div id="q2-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
-                    <div id="q2-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"></div>
+                    <div id="q2-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a href="../malware.html" class="help-btn"><b>Help</b></a></div>
                 </div>
                 <div class="responces pick-one">
                     <ul>
@@ -77,7 +77,7 @@
                 <p>question text <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui exercitationem incidunt esse accusantium animi doloremque culpa. Beatae nobis, sint placeat dolorem, alias quos ducimus vero at nihil illum labore magni.</p>
                 <div class="results" id="results-3">
                     <div id="q3-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
-                    <div id="q3-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"></div>
+                    <div id="q3-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a href="../malware.html" class="help-btn"><b>Help</b></a></div>
                 </div>
                 <div class="responces pick-one">
                     <ul>
@@ -92,7 +92,11 @@
             </div>
         </div>
         <div class="results-container">
-            <button onclick="end_test(0)" class="test-btn">Submit</button>
+            <button onclick="end_test(0)" class="test-btn">Submit Answers</button>
+            <audio src="../Assets/audio/output.mp3" id="all-correct"></audio>
+            <div class="score-box" id="score">
+                
+            </div>
         </div>
     </div>  
     <footer class="footer">

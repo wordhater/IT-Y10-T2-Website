@@ -27,7 +27,7 @@
     width: 100%;
 }
 .questions, .results-container {
-    width: 90vw;
+    width: 90%;
     margin: auto;
     padding: 20px;
     background-color: var(--bgcolor-1-clear);
@@ -56,4 +56,14 @@
     border: 0;
     border-radius: 10px;
     font-size: 20px;
+}
+.incorrect a {
+    padding: 10px;
+    background-color: var(--dark-blue-accent-clear);
+    border-radius: 10px;
+    font-size: larger;
+}
+
+.help-btn {
+    float: right;
 }

@@ -43,6 +43,7 @@ function end_test(test_id) {
             }
         } else if (tests[test_id].qtypes[i] == 1){
             let correct = true
+            if (inputs[i].length != tests[test_id].answers[i].length) {correct=false}
             for (let ii = 0; ii<inputs[i].length; ii++){
                 if (inputs[i][ii] != tests[test_id].answers[i][ii]){correct=false}
             }
@@ -59,4 +60,16 @@ function end_test(test_id) {
             }
         }
     }
+    // show results
+    document.querySelectorAll('.scores').forEach(element => {element.remove()})
+    let congrastring = ""
+    if (correctnums[0] == correctnums[1]){
+        congrastring = "Congratulations you got 100%! <a href='index.html'>click here to return to all tests</a>"
+        play("all-correct")
+    }
+    let html = `
+    <h3 class="scores">You Got: ${correctnums[0]}/${correctnums[1]}</h3>
+    <h3 class="scores">${congrastring}</h3>
+    `
+    document.getElementById('score').appendChild(create(html))
 }
