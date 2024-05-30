@@ -99,7 +99,7 @@ body,html {
 .nav {
     display: block;
     position:fixed;
-    z-index: 2;
+    z-index: 2 !important;
     height: auto;
     width: 100vw;
     line-height: 50px;

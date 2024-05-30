@@ -34,11 +34,11 @@ jQuery(function($) {
         	  	$animatable.removeClass('animatable').addClass('animated');
         	}
     	});
-  
+
     };
-    
+
     // Hook doAnimations on scroll, and trigger a scroll
       $(window).on('scroll', doAnimations);
     $(window).trigger('scroll');
-  
+
   });
