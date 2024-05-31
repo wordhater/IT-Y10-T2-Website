@@ -3,13 +3,13 @@
 Cyberbullying is when someone else intentionally uses an online platform to harass another person. This can be done in many ways through harassment, threats and more. In the digital age it is imperative that we take note of these hazards for our own safety, and to create a more positive and sustainable internet for everyone.
 
 
-## Why Its Bad
+## Why it's bad
 
 Cyberbullying can cause harm in many ways, it impacts the mental health and well-being of victims, damages relationships and can sometime result in physical violence. Furthermore, with the ability to create new identities and fake names with the click of a button, cyberbullies can remain anonymous with far less effort than traditional bullies. Overall, this causes cyberbullying to be a major issue that should be taken seriously due to it's many impacts on young people.
 
 ## Harassment and Flaming
 
-Online bullies will often attack a victim through sending repeated messages, emails, or posts intended to annoy or threaten the recipient. These messages can cause harm to the victim's mental health, leading to feelings of fear, anxiety and paranoia. Bullies may often perform these actions on publicly accessible pages too often referred to as flaming, these actions can have significant impacts to the victim as it brings others into the bullying which severely damages reputation and can lead to further forms of cyberbullying as it draws more bullies to join in attacking the individual, however it will also bring more attention to the situation.
+Online bullies will often attack a victim through sending repeated messages, emails, or posts intended to annoy or threaten the recipient. These messages can cause harm to the victim's mental health, leading to feelings of fear, anxiety and paranoia. Bullies may often perform these actions on publicly accessible pages too often referred to as flaming, these actions can have significant impacts to the victim as it brings others into the bullying which severely damages reputation and can lead to further forms of cyberbullying as it draws more bullies to join in attacking the individual, however it will also bring more positive attention to the situation.
 
 This kind of bullying can lead to more severe forms of cyberbullying such as doxing.
 
@@ -54,6 +54,7 @@ Overall, cyberbullying is a significant hazard of the modern online world we liv
 
 # Other notes
 
+i wrote this in an hour so dont judge too harshly
 
 ## Refrences (APA7)
 
