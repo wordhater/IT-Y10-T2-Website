@@ -52,8 +52,12 @@ If you wish to learn more about the types of scams, there is plenty of informati
 
 ## refrences
 
-https://en.wikipedia.org/wiki/Technical_support_scam
+Wikipedia Contributors. “Technical Support Scam.” Wikipedia, Wikimedia Foundation, 17 Dec. 2019, en.wikipedia.org/wiki/Technical_support_scam
 
 ### images
 
 social media scam: https://www.cyber.gov.au/learn-basics/explore-basics/recognise-and-report-scams
+
+https://cheapsslsecurity.com/blog/10-phishing-email-examples-you-need-to-see/
+
+https://www.smh.com.au/national/bombarded-with-scam-calls-and-messages-there-s-a-way-to-stop-them-20231219-p5eshi.html

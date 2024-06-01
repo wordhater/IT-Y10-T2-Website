@@ -148,7 +148,7 @@ body {
         height: auto;
         border-radius: 10px;
     }
-    .content p, .content ul {
+    .content p, .content ul, .content ol {
         font-size: 18px;
         margin-left: 15px;
         margin-right: 15px;
@@ -170,7 +170,7 @@ body {
 }
 
 
-.content p, .content ul {
+.content p, .content ul, .content ol {
     font-size: 18px;
     margin-left: 40px;
     margin-right: 40px;
@@ -204,6 +204,14 @@ body {
     background-image: url(../Assets/Images/matrix.jpg);
     background-attachment: fixed;
 }
+#scam-1 {
+    background-image: url(../Assets/Images/scam-calls.jpg);
+    background-attachment: fixed;
+}
+#phishing1 {
+    background-image: url(../Assets/Images/phishing01.jpg);
+    background-attachment: fixed;
+}
 /* side nav scroll selector */
 .side-nav li {
     transition: all 0.5s;
@@ -221,6 +229,10 @@ body {
 }
 .imagewall {
     padding: 10px;
-    width: 400px;
+    width: 600px;
     max-width: 80%;
+
+}
+.imagewall-container div {
+    height: auto;
 }

@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/content.css">
 </head>
-<body>
-    <div class="background">
-        <video src="Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
-    </div>
+<body style="background-image: url(Assets/Images/Phishingbg1.jpg);">
     <nav class="nav" id="nav">
         <ul>
             <li id="nav-item-1"><a href="index.html">Home</a></li>
@@ -36,36 +33,139 @@
         <aside class="side-nav" id="side-nav">
             <div class="mobile-button" id="mobile-button" onclick="swapnav()"><img src="Assets/Icons/three-bars.svg" alt="nav"></div>
             <ul>
-                <li><a href="#heading-1">heading</a></li>
-                <li><a href="#heading-2">heading</a></li>
-                <li><a href="#heading-3">heading</a></li>
-                <li><a href="#heading-4">heading</a></li>
-                <li><a href="#heading-5">heading</a></li>
-                <li><a href="#heading-6">heading</a></li>
+                <li><a href="#title">Phishing</a></li>
+                <li><a href="#phishing-signs">How to spot it</a></li>
+                <li><a href="#phishing-what">What to do</a></li>
+                <li><a href="#samples">Samples</a></li>
+                <li><a href="#scams">Scam calls</a></li>
+                <li><a href="#how-scams">Scams - How</a></li>
+                <li><a href="#bib">References</a></li>
             </ul>
         </aside>
         <div class="main-content-block">
             <div class="content">
-                <section id="heading-1">
-                    <h1>heading</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni consequuntur illum nulla esse aspernatur atque qui. Sequi dolore architecto voluptatum dolor, doloremque excepturi ut eius omnis voluptatem perspiciatis voluptas ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus maxime maiores necessitatibus quod aliquid debitis aut, dolores porro exercitationem consectetur magnam magni natus voluptatem, totam molestiae sequi perferendis asperiores!</p>
+                <section id="title">
+                    <h1>Phishing</h1>
+                    <p>
+                        Phishing is a means that cyber criminals use to trick you into giving them personal information, this can be performed over email, messages, social media and any other means of communication. In many cases it can be challenging to spot and even come from someone you know online.
+                    </p>
                 </section>
-                <section id="heading-2">
-                    <h1>heading</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni consequuntur illum nulla esse aspernatur atque qui. Sequi dolore architecto voluptatum dolor, doloremque excepturi ut eius omnis voluptatem perspiciatis voluptas ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus maxime maiores necessitatibus quod aliquid debitis aut, dolores porro exercitationem consectetur magnam magni natus voluptatem, totam molestiae sequi perferendis asperiores!</p>
+                <section id="phishing-signs">
+                    <h2>How to spot Phishing</h2>
+                    <p>
+                        There are usually some telltale signs around any Phishing attack these include:
+                    </p>
+                    <ol>
+                        <li>The senders name: often the username of the sender will have some slight changes such as an underscore instead of a space or number such as a 0 instead of an o.</li>
+                        <hr>
+                        <li>The senders @domain: a fake email which pretends to be from a large company or government will usually have a standard domain such as @gmail.com instead of the business name or gov at the end.</li>
+                        <hr>
+                        <li>Unusual links or link shorteners: the above points also apply to links contained within the message, most often legitimate emails will tell you to visit their website rather than send you a link.</li>
+                        <hr>
+                        <li>Offers that seem to good to be real: they probably are, often these offers will also have a limited time to cause the victim to hurry and not analyse it to check if it's a scam first.</li>
+                        <hr>
+                        <li>Current events: often scammers will send messages based of current events taking place, such as around tax time a scammer would send emails to scam people pretending to be from the government.</li>
+                    </ol>
                     <!-- image break -->
-                    <div class="image-break"><img src="Assets/Home page/hero-image.jpg" alt=""></div>
+                    <div class="image-break" id="phishing1"></div>
                 </section>
-                <section id="heading-3">
-                    <h1>heading</h1>
-                    <!--side image-->
-                    <div class="side-image right"><img src="Assets/Home page/hero-image.jpg" alt=""></div>
-                    <p>Lorem ipsum, dolor sit amet <br> 
-                    consectetur adipisicing elit. Magni consequuntur illum nulla esse aspernatur atque qui. Sequi dolore architecto voluptatum dolor, doloremque excepturi ut eius omnis voluptatem perspiciatis voluptas ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus maxime maiores necessitatibus quod aliquid debitis aut, dolores porro exercitationem consectetur magnam magni natus voluptatem, totam molestiae sequi perferendis asperiores!</p>
+                <section id="phishing-what">
+                    <h2>What to do if you suspect a phishing attack</h2>
+                    <p>
+                        There will usually be a means of reporting and blocking accounts for these kinds of actions. Reporting the account will usually end up with the account removed from the platform, and following this preventative measures are often enforced by your provider to prevent these bad actors from registering new accounts.
+                        <br><br>
+                        Blocking the user will prevent them from sending you further phishing scams under this username.
+                    </p>
                 </section>
-                <section id="heading-5">
-                    <h1>heading</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni consequuntur illum nulla esse aspernatur atque qui. Sequi dolore architecto voluptatum dolor, doloremque excepturi ut eius omnis voluptatem perspiciatis voluptas ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus maxime maiores necessitatibus quod aliquid debitis aut, dolores porro exercitationem consectetur magnam magni natus voluptatem, totam molestiae sequi perferendis asperiores!</p>
+                <section id="samples">
+                    <h1>Phishing Samples</h1>
+                    <div class="imagewall-container">
+                        <div class="imagewall">
+                            <img src="Assets/Images/phishing-samples/1.png" alt="phishing sample" style="width: 100%;">
+                            <p>Account suspension</p>
+                        </div>
+                        <div class="imagewall">
+                            <img src="Assets/Images/phishing-samples/2.png" alt="phishing sample" style="width: 100%;">
+                            <p>Fake order</p>
+                        </div>
+                        <div class="imagewall">
+                            <img src="Assets/Images/phishing-samples/3.png" alt="phishing sample" style="width: 100%;">
+                            <p>deal scam</p>
+                        </div>
+                        <div class="imagewall">
+                            <img src="Assets/Images/phishing-samples/4.png" alt="phishing sample" style="width: 100%;">
+                            <p>verification scam</p>
+                        </div>
+                        <div class="imagewall">
+                            <img src="Assets/Images/phishing-samples/5.png" alt="phishing sample" style="width: 100%;">
+                            <p>payment update scam</p>
+                        </div>
+                        <div class="imagewall">
+                            <img src="Assets/Images/phishing-samples/6.png" alt="phishing sample" style="width: 100%;">
+                            <p>Delivery scam</p>
+                        </div>
+                        <div class="imagewall">
+                            <img src="Assets/Images/phishing-samples/7.png" alt="phishing sample" style="width: 100%;">
+                            <p>Impersonation scam</p>
+                        </div>
+                        <div class="imagewall">
+                            <img src="Assets/Images/phishing-samples/8.png" alt="phishing sample" style="width: 100%;">
+                            <p>payment confirmation scam</p>
+                        </div>
+                        <div class="imagewall">
+                            <img src="Assets/Images/phishing-samples/9.png" alt="phishing sample" style="width: 100%;">
+                            <p>Voicemail scam</p>
+                        </div>
+                        <div class="imagewall">
+                            <img src="Assets/Images/phishing-samples/10.png" alt="phishing sample" style="width: 100%;">
+                            <p>Voicemail scam</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="scams">
+                    <h1>Scam Calls</h1>
+                    <p>
+                        You hare probably heard about scam calls before, they are phone calls made by a scammer that pretends to be from an organisation with some kind of problem involving payment or your computer. Most often these calls are aimed at elderly people or people with little knowledge about technology. These scams can be highly sophisticated to try to keep their anonymity while having their victim not become too suspicious of what's happening.
+                        <br><br>
+                        These scams often involve a desktop or laptop, where a scammer will most likely ask you to install some form of remote desktop software. This software allows them to have full remote access over your computer.
+                        <br><br>
+                        The following info aims to help you avoid being scammed by telling to common actions of scammers you need to be aware of.
+                    </p>
+                    <div class="image-break" id="scam-1"></div>
+                </section>
+                <section id="how-scams">
+                    <h2>How The Scammer Scams</h2>
+                    <p>
+                        Note: this is primarily for tech support scams however the general process will be similar for other kinds of scams
+                    </p>
+                    <ol>
+                        <li>Fear and urgency: A scammer will attempt to create a sense of urgency, telling their victim that their computer is in dire need of fixes and will leak their personal information if left unchecked</li>
+                        <hr>
+                        <li>Offer to fix the issue: A scammer then will proceed to say that they need access to the victim's computer to solve the issue</li>
+                        <hr>
+                        <li>Exaggerate the nonexistent issue: Make out that the situation is worse than originally thought. This is often done by entering "netstat" into a command prompt window, this command outputs merely statistics about your computer's network connection, however a scammer would make out that the list of connections are from "hackers". A scammer may also say other core processes on your computer are malware.</li>
+                        <hr>
+                        <li>Request payment: The next step a scammer will take once they have their victim convinced that their computer needs urgent fixes, is to request a payment for their "services". Since they have remote access to your computer they will open up a form in your browser, where they request your personal info.</li>
+                        <hr>
+                        <li>The scam: most often after personal information has been stolen the scammer will simply disappear, leaving the call. However they may sometimes modify bank account balances to trick the victim into transferring even more money to the scammer.</li>
+                        <hr>
+                    </ol>
+                    <p>
+                        Overall, scams are a hazard to many people who know little about computers and how they work, they manipulate this vulnerability to profiteer.
+                        <br><br>
+                        If you wish to learn more about the different types of scams, there is plenty of information online about it.
+                    </p>
+                </section>
+                <section id="bib">
+                    <h2>References</h2>
+                    <ul>
+                        <li>Wikipedia Contributors. “Technical Support Scam.” Wikipedia, Wikimedia Foundation, 17 Dec. 2019, <a target="_blank" href="https://en.wikipedia.org/wiki/Technical_support_scam">en.wikipedia.org/wiki/Technical_support_scam</a></li>
+                        <li>National Cyber Security Centre. “Phishing: Spot and Report Scam Emails, Texts, Websites and Calls.” Www.ncsc.gov.uk, 26 Nov. 2021, <a href="https://www.ncsc.gov.uk/collection/phishing-scams">www.ncsc.gov.uk/collection/phishing-scams</a> </li>
+                        <h4>images</h4>
+                        <li><a target="_blank" href="https://cheapsslsecurity.com/blog/10-phishing-email-examples-you-need-to-see/">cheapsslsecurity.com</a></li>
+                        <li><a target="_blank" href="https://www.smh.com.au/national/bombarded-with-scam-calls-and-messages-there-s-a-way-to-stop-them-20231219-p5eshi.html">smh.com</a></li>
+                        <li><a target="_blank" href="https://zvelo.com/active-phishing-campaign-alert/">zvelvo.com</a></li>
+                    </ul>
                 </section>
             </div>
             <div class="spacer" style="height: 200px;"></div>
