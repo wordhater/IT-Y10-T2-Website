@@ -21,6 +21,9 @@ function type(elements, texts, speed){
 
 setTimeout(() => {type([document.getElementById('typing'), document.getElementById('typing-2')], ["Keeping Safe Online","Stay Secure, Safe and Confident: Your Guide to Online Safety"], 50)}, 1000)
 
+// Jquery Dependent
+
+// scroll animations
 jQuery(function($) {
     var doAnimations = function() {
       	var offset = $(window).scrollTop() + $(window).height(),

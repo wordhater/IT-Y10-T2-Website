@@ -65,9 +65,26 @@ function apply_settings(){
     // set theme
     if (settings[1] == 1){
         document.body.classList.add("lightmode")
+        try {
+            document.querySelectorAll(".lightclass").forEach(element => {
+                element.classList.add("lightmode")
+            })
+        }
+        catch(err) {
+            console.log('no elements found for specific lightmode class')
+        }
     } else {
         document.body.classList.remove("lightmode")
+        try {
+            document.querySelectorAll(".lightclass").forEach(element => {
+                element.classList.remove("lightmode")
+            })
+        }
+        catch(err) {
+            console.log('no elements found for specific lightmode class')
+        }
     }
+    
     // animations
     if (settings[2] == 1){
         document.getElementById("bgVideo").pause()
@@ -96,5 +113,4 @@ function process_settings() {
     setCookie('settings', inputs)
     location.reload();
 }
-
 

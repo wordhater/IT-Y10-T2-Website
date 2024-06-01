@@ -59,3 +59,13 @@ i wrote this in an hour so dont judge too harshly
 ## Refrences (APA7)
 
 Peebles, Erin. “Cyberbullying: Hiding behind the Screen.” Paediatrics & Child Health, vol. 19, no. 10, 19 Dec. 2014, pp. 527–8, www.ncbi.nlm.nih.gov/pmc/articles/PMC4276384/
+
+## images
+
+https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2022/june/US-launches-task-force-to-address-online-abuse/
+
+Example doxing by Howardcorn33 - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=140012312
+
+Group of people using phones from the guardian
+
+Children on the internet By Allconnect https://www.allconnect.com/blog/report-internet-use-over-half-terabyte

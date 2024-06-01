@@ -1,5 +1,5 @@
 
-/*fonts*/
+/* load fonts */
 
 @font-face {
     font-family: "standard";
@@ -11,6 +11,7 @@
 }
 
 * {
+    /* apply settings with variables for easy modification */
     font-family: var(--font), Helvetica;
     color: var(--primary-text);
     box-sizing: border-box;
@@ -24,7 +25,7 @@
     --inverted-mode: #ffffff;
     --bgcolor-1: #333333;
     --bgcolor-2: #222222;
-    --bgcolor-1-clear: #3333335f;
+    --bgcolor-1-clear: #0a0a0a5f;
     --accent-gray: #3d3d3d;
     --accent-gray-clear: #3d3d3d74;
     --blue-accent: #0058cc;
@@ -65,8 +66,12 @@
 body,html {
     margin: 0;
     height: 0px;
+    /* added to allow links to other parts of the page to scroll smoothly */
     scroll-behavior: smooth;
     max-width: 100%;
+
+    /* without this on content links will scroll to headings behind the navbar */
+    scroll-padding-top: var(--nav-distance);
 }
 
 .centered {
@@ -157,7 +162,7 @@ body,html {
 #bar-3.active {
     animation: 1s bar-3-active forwards;   
 }
-
+/* I made separate animations for closing the nav, without these it just snaps back to the initial position */
 #bar-1.inactive {
     animation: 1s bar-1-inactive forwards;    
 }
@@ -237,7 +242,16 @@ body,html {
 		transform: translateY(0);
 	}
 }
-
+@keyframes slideinright {
+	0% {
+		opacity: 0;
+		transform: translateX(-500px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 /*footer*/
 
 .footer {
@@ -282,9 +296,12 @@ body,html {
 .animated {
     visibility: visible;
     animation-fill-mode: both;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-play-state: running;
 }
 .animated.fadeInUp {
 	animation-name: fadeInUp;
+}
+.animated.slideinright {
+	animation-name: slideinright;
 }

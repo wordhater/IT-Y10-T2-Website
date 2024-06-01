@@ -34,7 +34,7 @@
     <div class="headerbg"></div>
     <div class="page-contents">
         <aside class="side-nav" id="side-nav">
-            <div class="mobile-button" id="mobile-button" onclick="swapnav()">nav</div>
+            <div class="mobile-button" id="mobile-button" onclick="swapnav()"><img src="Assets/Icons/three-bars.svg" alt="nav"></div>
             <ul>
                 <li><a href="#heading-1">heading</a></li>
                 <li><a href="#heading-2">heading</a></li>
@@ -82,11 +82,8 @@
     </footer>
 
 </body>
+<script src="scripts/jquery.min.jsm.js"></script>
 <script src="scripts/core.js"></script>
-<script>
-    function swapnav() {
-        console.log("navtoggle")
-        document.getElementById("side-nav").classList.toggle("navshown")
-    }
-</script>
+<script src="scripts/content.js"></script>
+
 </html>

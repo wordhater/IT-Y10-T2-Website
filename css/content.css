@@ -3,6 +3,13 @@
     --sidebar-width: 150px;
 }
 
+body {
+    background-image: url(../Assets/Images/cyberbullyingbg.webp);
+    background-attachment: fixed;
+    background-size: cover;
+        background-position: center;
+    background-repeat: no-repeat;
+}
 .side-nav {
     width: var(--sidebar-width);
     height: auto;
@@ -18,12 +25,16 @@
 .side-nav ul {
     position: relative;
     list-style: none;
-    left: -20px;
-
+    /* for some reason it starts the list in the center of the sidebar this fixes it */
+    left: -30%;
+    width: 150%;
 }
 .side-nav ul a {
     text-decoration: none;
     transition: all 0.8s;
+}
+.side-nav ul li {
+    margin-bottom: 10px;
 }
 .side-nav ul a:hover {
     font-size: 20px;
@@ -37,7 +48,17 @@
     padding: 10px;
     width: 50px;
     border-radius: 10px;
+    height: 50px;
     display: none;
+}
+
+#mobile-button img {
+    width: 100%;
+    filter: invert(1);
+}
+
+#mobile-button img.lightmode {
+    filter: invert(0);
 }
 
 /*content*/
@@ -62,18 +83,26 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 40vh;
     overflow: hidden;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .image-break img {
     width: 90%;
     margin: auto;
+    
 }
 .side-image {
-    margin: auto;
+    margin: 20px;
+    max-width: 100%;
+    overflow: hidden;
 }
 .side-image img {
     height: 200px;
+    border-radius: 10px;
 }
 .left {
     float: left;
@@ -84,7 +113,7 @@
 
 /*mobile view changes*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .side-nav {
         transform: translate(-140px, 0);
     }
@@ -103,8 +132,70 @@
     .side-nav ul {
         top: -50px;
     }
+    .left {
+        width: 100%;
+        float: none;
+    }
+    .right {
+        width: 100%;
+        float: none;
+    }
+    .side-image {
+        display: flex;
+        justify-content: center;
+    }
+    .side-image img {
+        width: 100%;
+        margin-right: 7%;
+        height: auto;
+        border-radius: 10px;
+    }
 }
 .navshown {
     transform: translate(0, 0);
 }
 
+/* set the text formatting for content */
+.content h1 {
+    margin-top: 0;
+    font-size: 40px;
+    text-align: center;
+}
+.content h2 {
+    font-size: 30px;
+}
+
+
+.content p, .content ul {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height:200%;
+}
+
+.masked-right{
+    /* -webkit- is included here for compatability */
+    -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+    padding-right: 3vw;  
+    background-color: white;
+
+}
+
+/*image links*/
+/* I know it's inefficient with all the background attachment stuff but it doesn't apply if applied separately*/
+#cyberbullying01 {
+    background-image: url(../Assets/Images/cyberbullying01.jpeg);
+    background-attachment: fixed;
+}
+#cyberbullying04 {
+    background-image: url(../Assets/Images/cyberbullying04.png);
+    background-attachment: fixed;
+}
+/* side nav scroll selector */
+.side-nav li {
+    transition: all 0.5s;
+}
+.side-nav-current {
+    padding-left: 10px;
+}
