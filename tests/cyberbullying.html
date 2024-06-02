@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="background">
+        <video src="../Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
+    </div>
+    <nav class="nav" id="nav">
+        <ul>
+            <li id="nav-item-1"><a href="../index.html">Home</a></li>
+            <li id="nav-item-2"><a href="../about.html">About</a></li>
+            <li id="nav-item-3"><a href="../cyberbullying.html">Cyberbullying</a></li>
+            <li id="nav-item-4"><a href="../malware.html">Malware</a></li>
+            <li id="nav-item-5"><a href="../phishing.html">Phishing</a></li>
+            <li id="nav-item-6"><a href="index.html">Test Your Knowledge</a></li>
+            <li id="nav-item-7"><a href="../info.html">Info Centre</a></li>
+            <li id="nav-item-8"><a href="../settings.html">Settings</a></li>
+        </ul>
+    </nav>
+    <header class="body-header">
+        <div class="header-item dropdown-button button" id="nav-activator" onclick="activatenav()">
+            <div id="bar-1" class="menubtn-bar"></div>
+            <div id="bar-2" class="menubtn-bar"></div>
+            <div id="bar-3" class="menubtn-bar"></div>
+        </div>
+        <div class="header-item header-label"><h1>Test Your Knowledge</h1></div>
+    </header>
+    <div class="headerbg"></div>
+    <!--Content-->
+    <div class="content">
+        <div class="test-heading"><h1>Cyberbullying</h1></div>
+        <div class="questions">
+            <div id="question-1" class="question">
+                <h1>Q1</h1>
+                <p>
+                    Why is Cyberbullying so bad?
+                </p>
+                <div class="results" id="results-1">
+                    <div id="q1-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q1-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a target="_blank" href="../cyberbullying.html#why-bad" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="check-container"><input type="checkbox" name="q1" id="q1-0" value="0">The impacts on mental health</li>
+                        <li class="check-container"><input type="checkbox" name="q1" id="q1-1" value="1">It helps people stand up for themselves</li>
+                        <li class="check-container"><input type="checkbox" name="q1" id="q1-2" value="2">It damages Reputation</li>
+                        <li class="check-container"><input type="checkbox" name="q1" id="q1-3" value="3">It teaches people how to deal with conflict effectively.</li>
+                        <li class="check-container"><input type="checkbox" name="q1" id="q1-4" value="4">It's a form of healthy competition</li>
+                        <li class="check-container"><input type="checkbox" name="q1" id="q1-5" value="5">Some people who experience cyberbullying develop trust issues</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-2" class="question">
+                <h1>Q2</h1>
+                <p>
+                    Which of the following is NOT a form of cyberbullying?
+                </p>
+                <div class="results" id="results-2">
+                    <div id="q2-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q2-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a target="_blank" href="../cyberbullying.html#harassment" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="radio-container"><input type="radio" name="q2" id="q2-0" value="0">Doxing</li>
+                        <li class="radio-container"><input type="radio" name="q2" id="q2-1" value="1">Harassment</li>
+                        <li class="radio-container"><input type="radio" name="q2" id="q2-2" value="2">Flaming</li>
+                        <li class="radio-container"><input type="radio" name="q2" id="q2-3" value="3">Online debate</li>
+                        <li class="radio-container"><input type="radio" name="q2" id="q2-4" value="4">Trolling</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-3" class="question">
+                <h1>Q3</h1>
+                <p>
+                    Why might blocking not always be an effective method of stopping cyberbullying?
+                </p>
+                <div class="results" id="results-3">
+                    <div id="q3-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q3-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a target="_blank" href="../cyberbullying.html#blocking" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="check-container"><input type="checkbox" name="q3" id="q3-0" value="0">The bully can create a new account</li>
+                        <li class="check-container"><input type="checkbox" name="q3" id="q3-1" value="1">The bully can attack you publicly instead of privately</li>
+                        <li class="check-container"><input type="checkbox" name="q3" id="q3-2" value="2">Blocking prevents cyberbullies from continuing their actions because they no longer have access to their target.</li>
+                        <li class="check-container"><input type="checkbox" name="q3" id="q3-3" value="3">Blocking can make cyberbullies more determined to continue their actions because they feel challenged by being blocked.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-4" class="question">
+                <h1>Q4</h1>
+                <p>
+                    Why is Doxing considered a severe form of cyberbullying?
+                </p>
+                <div class="results" id="results-4">
+                    <div id="q4-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q4-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a target="_blank" href="../cyberbullying.html#doxing" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces">
+                    <ul>
+                        <li class="check-container"><input type="checkbox" name="q4" id="q4-0" value="0">It can lead to lasting impacts on ones life</li>
+                        <li class="check-container"><input type="checkbox" name="q4" id="q4-1" value="1">Doxing is harmless because it only involves sharing public information.</li>
+                        <li class="check-container"><input type="checkbox" name="q4" id="q4-2" value="2">Doxing is considered severe because it gives the victim free publicity.</li>
+                        <li class="check-container"><input type="checkbox" name="q4" id="q4-3" value="3">It severely impacts ones self esteem.</li>
+                        <li class="check-container"><input type="checkbox" name="q4" id="q4-4" value="4">Identity theft can impact the victim financially.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-5" class="question">
+                <h1>Q5</h1>
+                <p>
+                    What is the importance of reporting cyberbullying?
+                </p>
+                <div class="results" id="results-5">
+                    <div id="q5-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q5-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a target="_blank" href="../cyberbullying.html#telling-others" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces">
+                    <ul>
+                        <li class="check-container"><input type="checkbox" name="q5" id="q5-0" value="0">The platform in use can take actions to prevent the cyberbully from attacking you again.</li>
+                        <li class="check-container"><input type="checkbox" name="q5" id="q5-1" value="1">It guarantees immediate resolution of the issue.</li>
+                        <li class="check-container"><input type="checkbox" name="q5" id="q5-2" value="2">Protects others through the account being potentially banned it can help others too.</li>
+                        <li class="check-container"><input type="checkbox" name="q5" id="q5-3" value="3">Reporting cyberbullying is important because it deletes all offensive content.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-6" class="question">
+                <h1>Q6</h1>
+                <p>
+                    What should you do first if you are being cyberbullied?
+                </p>
+                <div class="results" id="results-6">
+                    <div id="q6-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q6-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a target="_blank" href="../cyberbullying.html#prevention" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="radio-container"><input type="radio" name="q6" id="q6-0" value="0">Block the user</li>
+                        <li class="radio-container"><input type="radio" name="q6" id="q6-1" value="1">Tell someone</li>
+                        <li class="radio-container"><input type="radio" name="q6" id="q6-2" value="2">do nothing and ignore it</li>
+                        <li class="radio-container"><input type="radio" name="q6" id="q6-3" value="3">report the bully</li>
+                        <li class="radio-container"><input type="radio" name="q6" id="q6-4" value="4">Depends on the situation</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-7" class="question">
+                <h1>Q7</h1>
+                <p>
+                    Why is ignoring cyberbullying sometimes ineffective?
+                </p>
+                <div class="results" id="results-7">
+                    <div id="q7-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q7-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a target="_blank" href="../cyberbullying.html#" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="radio-container"><input type="radio" name="q7" id="q7-0" value="0">Bullies don't seek attention</li>
+                        <li class="radio-container"><input type="radio" name="q7" id="q7-1" value="1">Bullies stop immediately</li>
+                        <li class="radio-container"><input type="radio" name="q7" id="q7-2" value="2">Bullies can get attention from others while bullying you</li>
+                        <li class="radio-container"><input type="radio" name="q7" id="q7-3" value="3">Ignoring increases the bullying</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="results-container">
+            <button onclick="end_test(0)" class="test-btn">Submit Answers</button>
+            <audio src="../Assets/audio/output.mp3" id="all-correct"></audio>
+            <div class="score-box" id="score">
+                
+            </div>
+        </div>
+    </div>  
+    <footer class="footer">
+        <div class="footer-contents">
+            <h3 class="footer-item">Business name</h3>
+            <a class="footer-item link"href="mailto://rlock58@eq.edu.au">Contact Us</a>
+            <a class="footer-item link" target="_blank" href="https://github.com/wordhater/IT-Y10-T2-Website">Github</a>
+            <a href="#">Top of page</a>
+        </div>
+    </footer>
+
+</body>
+<script src="../scripts/jquery.min.jsm.js"></script>
+<script src="../scripts/core.js"></script>
+<script src="script.js"></script>
+</html>

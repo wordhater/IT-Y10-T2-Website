@@ -88,6 +88,7 @@ input {
 .check-container.image {
     background-color: var(--bgcolor-1);
     margin: 10px;
+    border-radius: 20px;
 }
 @media screen and (max-width: 500px) {
     .responces img {
