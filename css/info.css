@@ -7,6 +7,9 @@
     font-size: 2vw;
     margin: 20px;
 }
+.text-box:hover {
+    background-color: var(--blue-accent);
+}
 .search-header {
     width: 100%;
     background-color: var(--dark-blue-accent-clear);
@@ -38,4 +41,8 @@
     text-align: center;
     backdrop-filter: blur(5px);
     text-decoration: none;
+}
+
+.list-item p {
+    padding: 10px;
 }

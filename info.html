@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="background">
-        <video src="Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
+        <video src="Assets/Video/background02.mp4" id="bgVideo" autoplay loop muted>
     </div>
     <nav class="nav" id="nav">
         <ul>
@@ -36,7 +36,7 @@
         <div class="search-header">
             <input type="text" placeholder="search" name="search-query" id="search-text" class="text-box">
             <button class="search-button" onclick="search()">
-                <img src="Assets/Icons/search.svg" alt="Search" class="search-icon">
+                <img src="Assets/Icons/search.svg" alt="Search" class="search-icon lightclass">
             </button>
         </div>
         <div class="search-results-container">
@@ -46,6 +46,7 @@
         </div>
         <hr>
         <div class="list-container">
+            <h1 style="text-align: center; background-color: var(--bgcolor-1-clear);">All Items</h1>
             <div class="list" id="all-list">
                 <!--This div gets filled out by javascript to allow for easy changing of values in bulk check scripts/info.js for more information-->
             </div>
