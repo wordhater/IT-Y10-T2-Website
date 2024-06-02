@@ -12,6 +12,7 @@ There are usually some telltale signs around any Phishing attack these include:
     <li>Unusual links or link shorteners: the above points also apply to links contained within the message, most often legitimate emails will tell you to visit their website rather than send you a link</li>
     <li>Offers that seem to good to be real: they probably are, often these offers will also have a limited time to cause the victim to hurry and not analyse it to check if it's a scam first</li>
     <li>Current events: often scammers will send messages based of current events taking place, such as around tax time a scammer would send emails to scam people pretending to be from the government</li>
+    <li>Zip attachments: often scammer can hide malicious files inside of a zip</li>
 </ul>
 
 ![social media scam](social_media_scam.png)

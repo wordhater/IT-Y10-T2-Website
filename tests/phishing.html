@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="background">
+        <video src="../Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
+    </div>
+    <nav class="nav" id="nav">
+        <ul>
+            <li id="nav-item-1"><a href="../index.html">Home</a></li>
+            <li id="nav-item-2"><a href="../about.html">About</a></li>
+            <li id="nav-item-3"><a href="../cyberbullying.html">Cyberbullying</a></li>
+            <li id="nav-item-4"><a href="../malware.html">Malware</a></li>
+            <li id="nav-item-5"><a href="../phishing.html">Phishing</a></li>
+            <li id="nav-item-6"><a href="index.html">Test Your Knowledge</a></li>
+            <li id="nav-item-7"><a href="../info.html">Info Centre</a></li>
+            <li id="nav-item-8"><a href="../settings.html">Settings</a></li>
+        </ul>
+    </nav>
+    <header class="body-header">
+        <div class="header-item dropdown-button button" id="nav-activator" onclick="activatenav()">
+            <div id="bar-1" class="menubtn-bar"></div>
+            <div id="bar-2" class="menubtn-bar"></div>
+            <div id="bar-3" class="menubtn-bar"></div>
+        </div>
+        <div class="header-item header-label"><h1>Test Your Knowledge</h1></div>
+    </header>
+    <div class="headerbg"></div>
+    <!--Content-->
+    <div class="content">
+        <div class="test-heading"><h1>Phishing and scams</h1></div>
+        <div class="questions">
+            <div id="question-1" class="question">
+                <h1>Q1</h1>
+                <p>
+                    Which of the following are signs a message is a scam?
+                </p>
+                <div class="results" id="results-1">
+                    <div id="q1-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q1-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a href="../malware.html" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="radio-container"><input type="radio" name="q1" id="q1-0" value="0">Link Shorteners</li>
+                        <li class="radio-container"><input type="radio" name="q1" id="q1-1" value="1">Offers that seem too good to be true</li>
+                        <li class="radio-container"><input type="radio" name="q1" id="q1-2" value="2">Zip Attachments</li>
+                        <li class="radio-container"><input type="radio" name="q1" id="q1-3" value="3">All</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-2" class="question">
+                <h1>Q2</h1>
+                <p>
+                    Which of the following are scams?
+                </p>
+                <div class="results" id="results-2">
+                    <div id="q2-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q2-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a href="../malware.html" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <!-- Image based question -->
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="check-container image">
+                            <input type="checkbox" name="q2" id="q2-0" value="0">
+                            <img src="../Assets/Images/phishing-samples/11.png" alt="Scam examples">
+                        </li>
+                        <li class="check-container image">
+                            <input type="checkbox" name="q2" id="q2-1" value="1">
+                            <img src="../Assets/Images/phishing-samples/not-phishing/1.png" alt="Scam examples">
+                        </li>
+                        <li class="check-container image">
+                            <input type="checkbox" name="q2" id="q2-2" value="2">
+                            <img src="../Assets/Images/phishing-samples/5.png" alt="Scam examples">
+                        </li>
+                        <li class="check-container image">
+                            <input type="checkbox" name="q2" id="q2-3" value="3">
+                            <img src="../Assets/Images/phishing-samples/19.jpg" alt="Scam examples">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-3" class="question">
+                <h1>Q3</h1>
+                <p>
+                    How do Phishing emails try to bypass standard filters?
+                </p>
+                <div class="results" id="results-3">
+                    <div id="q3-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q3-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a href="../malware.html" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="check-container"><input type="checkbox" name="q3" id="q3-0" value="0">Poor Grammar</li>
+                        <li class="check-container"><input type="checkbox" name="q3" id="q3-1" value="1">Spelling Mistakes</li>
+                        <li class="check-container"><input type="checkbox" name="q3" id="q3-2" value="2">Using Zip files</li>
+                        <li class="check-container"><input type="checkbox" name="q3" id="q3-3" value="3">using similar addresses to an expected sender</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-4" class="question">
+                <h1>Q4</h1>
+                <p>
+                    Which of the following answers does NOT mean that the message is a scam?
+                </p>
+                <div class="results" id="results-4">
+                    <div id="q4-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q4-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a href="../malware.html" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="radio-container"><input type="radio" name="q4" id="q4-0" value="0">poor grammar in an emails</li>
+                        <li class="radio-container"><input type="radio" name="q4" id="q4-1" value="1">Slight misspellings in addresses</li>
+                        <li class="radio-container"><input type="radio" name="q4" id="q4-2" value="2">Promotional codes and deals</li>
+                        <li class="radio-container"><input type="radio" name="q4" id="q4-3" value="3">Link Shorteners</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-5" class="question">
+                <h1>Q5</h1>
+                <p>
+                    Which of the following messages are scams?
+                </p>
+                <div class="results" id="results-5">
+                    <div id="q5-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q5-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a href="../malware.html" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="check-container image">
+                            <input type="checkbox" name="q5" id="q5-0" value="0">
+                            <img src="../Assets/Images/phishing-samples/2.png" alt="Scam examples">
+                        </li>
+                        <li class="check-container image">
+                            <input type="checkbox" name="q5" id="q5-1" value="1">
+                            <img src="../Assets/Images/phishing-samples/20.jpg" alt="Scam examples">
+                        </li>
+                        <li class="check-container image">
+                            <input type="checkbox" name="q5" id="q5-2" value="2">
+                            <img src="../Assets/Images/phishing-samples/14.png" alt="Scam examples">
+                        </li>
+                        <li class="check-container image">
+                            <input type="checkbox" name="q5" id="q5-3" value="3">
+                            <img src="../Assets/Images/phishing-samples/not-phishing/2.png" alt="Scam examples">
+                        </li>
+                        <li class="check-container image">
+                            <input type="checkbox" name="q5" id="q5-4" value="4">
+                            <img src="../Assets/Images/phishing-samples/10.png" alt="Scam examples">
+                        </li>
+                        <li class="check-container image">
+                            <input type="checkbox" name="q5" id="q5-5" value="5">
+                            <img src="../Assets/Images/phishing-samples/19.jpg" alt="Scam examples">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="question-6" class="question">
+                <h1>Q6</h1>
+                <p>Which of the following are common tactics used by scammers?</p>
+                <div class="results" id="results-6">
+                    <div id="q6-correct" class="correct hidden result-icons"><img src="../Assets/Icons/tick-dark.png" alt="Correct" class="tick"></div>
+                    <div id="q6-incorrect" class="incorrect hidden result-icons"><img src="../Assets/Icons/cross.png" alt="Wrong" class="cross"><a href="../malware.html" class="help-btn"><b>Help</b></a></div>
+                </div>
+                <div class="responces pick-one">
+                    <ul>
+                        <li class="check-container"><input type="checkbox" name="q6" id="q6-0" value="0">Create a sense of fear and urgency</li>
+                        <li class="check-container"><input type="checkbox" name="q6" id="q6-1" value="1">Provide a detailed explanation of the issues</li>
+                        <li class="check-container"><input type="checkbox" name="q6" id="q6-2" value="2">Remote desktop software</li>
+                        <li class="check-container"><input type="checkbox" name="q6" id="q6-3" value="3">Ask for payment quickly</li>
+                        <li class="check-container"><input type="checkbox" name="q6" id="q6-4" value="4">Request payment through unconventional means.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="results-container">
+            <button onclick="end_test(1)" class="test-btn">Submit Answers</button>
+            <audio src="../Assets/audio/output.mp3" id="all-correct"></audio>
+            <div class="score-box" id="score">
+                
+            </div>
+        </div>
+    </div>  
+    <footer class="footer">
+        <div class="footer-contents">
+            <h3 class="footer-item">Business name</h3>
+            <a class="footer-item link"href="mailto://rlock58@eq.edu.au">Contact Us</a>
+            <a class="footer-item link" target="_blank" href="https://github.com/wordhater/IT-Y10-T2-Website">Github</a>
+            <a href="#">Top of page</a>
+        </div>
+    </footer>
+
+</body>
+<script src="../scripts/core.js"></script>
+<script src="script.js"></script>
+</html>

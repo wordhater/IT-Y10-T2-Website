@@ -3,7 +3,9 @@ const tests = [{
     "answers": [0, 2, [0, 2, 3]],
     "qtypes": [0, 0, 1]
 }, {
-
+    "name": "phishing",
+    "answers": [3, [0, 2, 3], [0, 1, 2], 2, [0, 1, 2, 4, 5], [1, 2, 4]],
+    "qtypes": [0, 1, 1, 0, 1, 1]
 }, {
 
 }]
@@ -43,7 +45,7 @@ function end_test(test_id) {
             }
         } else if (tests[test_id].qtypes[i] == 1){
             let correct = true
-            if (inputs[i].length != tests[test_id].answers[i].length) {correct=false}
+            if (inputs[i].length != tests[test_id].answers[i].length) {correct=false; console.log("incorrect selection")}
             for (let ii = 0; ii<inputs[i].length; ii++){
                 if (inputs[i][ii] != tests[test_id].answers[i][ii]){correct=false}
             }
@@ -51,11 +53,11 @@ function end_test(test_id) {
                 states[i] = 1
                 correctnums[0] += 1
                 correctnums[1] += 1
-                console.log("CORRECT")
+                console.log("CORRECTmulti")
                 document.getElementById(`q${i+1}-correct`).classList.remove('hidden')
             } else {
                 correctnums[1] += 1
-                console.log("INCORRECT")
+                console.log("INCORRECTmulti")
                 document.getElementById(`q${i+1}-incorrect`).classList.remove('hidden')
             }
         }
