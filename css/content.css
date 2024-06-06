@@ -168,6 +168,12 @@ body {
         margin-right: 15px;
         line-height: 150%;
     }
+    .imagewall {
+        margin-left: -100px;
+    }
+    .imagewall-container {
+        flex-direction: column;
+    }
 }
 .navshown {
     transform: translate(0, 0);
@@ -244,7 +250,7 @@ body {
 .imagewall {
     padding: 10px;
     width: 600px;
-    max-width: 80%;
+    max-width: 70%;
 
 }
 .imagewall-container div {

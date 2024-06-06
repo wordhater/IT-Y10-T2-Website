@@ -4,7 +4,16 @@
     flex-wrap: wrap;
 }
 .test-heading h1 {
-    padding-left: 20px;
+    font-size: 3vw;
+    text-align: center;
+}
+
+/* sets background image to stay in place while scrolling */
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .text-flexbox a {
     padding: 10px;

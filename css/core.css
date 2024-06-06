@@ -29,7 +29,7 @@
     --accent-gray: #3d3d3d;
     --accent-gray-clear: #3d3d3d74;
     --blue-accent: #0058cc;
-    --red-accent: #b10000;
+    --red-accent-blur: #b1000081;
     --dark-blue-accent-clear: #00246880;
     --primary-text: #ffffff;
     --secondary-text: #9e9e9e;
@@ -50,6 +50,7 @@
     --accent-gray: #a0a0a0;
     --accent-gray-clear: #a0a0a074;
     --blue-accent: #0073ff;
+    --red-accent-blur: #fd212181;
     --primary-text: #000000;
     --secondary-text: #212121;
     --dark-blue-accent-clear: #0059ff80;
@@ -59,6 +60,10 @@
 #bgVideo {
     position: fixed;
     z-index: -1000;
+    min-width: 100vw;
+    height: auto;
+    width: auto;
+    min-height: 100vh;
 }
 .background {
     top: 0;
@@ -66,7 +71,7 @@
 
 body,html {
     margin: 0;
-    height: 0px;
+    height: 100vh;
     /* added to allow links to other parts of the page to scroll smoothly */
     scroll-behavior: smooth;
     max-width: 100%;
@@ -125,25 +130,45 @@ body,html {
     float: left;
 }
 
-.nav li a {
+.nav a {
     display: inline-block;
     text-align: center;
     padding: 14px 16px;
     color: var(--primary-text);
     border-radius: 10px;
     transition: all 0.5s;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    padding: 15px 20px;
+    position: relative;
 }
 .nav li a:active {
     background-color: var(--blue-accent);
 }
 .nav li a:hover {
     background-color: var(--blue-accent);
-    scale: 1.3;
+    /* this can cause some issues in the nav at smaller sizes */
+    font-size: 25px;
 }
-.nav li a:current {
-    scale: 0.8;
+/* css to underline the links when hovered */
+.nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 5px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
-
+.nav a:hover:after { 
+    width: 95%; 
+    left: 2.5%;
+}
 
 /*animated menu button*/
 
@@ -266,6 +291,7 @@ body,html {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
 }
 .footer-item {
     padding: 10px;
@@ -307,29 +333,21 @@ body,html {
 	animation-name: slideinright;
 }
 
-.nav a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    
-    display: inline-block;
-    padding: 15px 20px;
-    position: relative;
+/* Typing cursor animations */
+.typing::after, .typing::after {
+    content: "|";
+    animation-name: blinking;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
 }
-.nav a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 5px;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-.nav a:hover:after { 
-    width: 100%; 
-    left: 0; 
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

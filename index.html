@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-    <div class="background">
-        <video src="Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
-            <!--needs fixing file dosent load-->
-    </div>
+<body class="body">
+    <div class="background"></div>
     <nav class="nav" id="nav">
         <ul>
             <li id="nav-item-1"><a href="index.html">Home</a></li>
@@ -34,14 +31,22 @@
     </header>
     <div class="headerbg"></div>
     <div class="content-container">
-        <div style="height: 15vh;"></div>
+        <div style="height: 1vh;"></div>
         <section>
             <div class="hero-box">
                 <h1 id="typing"></h1>
                 <h2 id="typing-2"></h2>
             </div>
         </section>
-        <p class="centered">scroll down</p>
+        <section>
+            <div class="pic-ctn ">
+                <img src="Assets/Images/cyberbullying01.jpeg" alt="" class="pic">
+                <img src="Assets/Images/matrix.jpg" alt="" class="pic">
+                <img src="Assets/Images/scam-calls.jpg" alt="" class="pic">
+                <img src="Assets/Images/phishing01.jpg" alt="" class="pic">
+                <img src="Assets/Images/internetpeople.webp" alt="" class="pic">
+              </div>
+        </section>
         <section>
             <div class="dual-container">
                 <a href="cyberbullying.html" class="box-container animatable fadeInUp">
@@ -73,6 +78,9 @@
             </div>
 
         </section>
+        <section id="aboutus">
+            
+        </section>
     </div>
     <div style="height: 1000px;"></div>
     <footer class="footer">
@@ -81,7 +89,7 @@
             <a class="footer-item link"href="mailto://rlock58@eq.edu.au">Contact Us</a>
             <a class="footer-item link" target="_blank" href="https://github.com/wordhater/IT-Y10-T2-Website">Github</a>
             <p class="footer-item">Note: Untested on webkit based browsers (safari)</p>
-            <a href="#">Top of page</a>
+            <a href="#" id="topbtn">Top of page</a>
         </div>
     </footer>
 

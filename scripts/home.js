@@ -2,8 +2,12 @@
 
 let index = 0
 function type(elements, texts, speed){
+
     let skips = 0
     if (animations){
+      elements.forEach(element => {
+        element.classList.add('typing')
+      });
         for (let i = 0; i<elements.length; i++) {
             if (index < texts[i].length) {
                 elements[i].innerHTML += texts[i].charAt(index)
@@ -11,7 +15,11 @@ function type(elements, texts, speed){
         index++
         if (skips != elements.length){
             setTimeout(() => {type(elements, texts, speed)}, speed)
-        }
+        } else {
+			elements.forEach(element => {
+				element.classList.remove('typing')
+			});
+		}
     } else {
 		for (let i = 0; i<elements.length; i++) {
 			elements[i].innerHTML = texts[i]
@@ -45,3 +53,17 @@ jQuery(function($) {
     $(window).trigger('scroll');
 
   });
+
+//   // moving elements
+// var velocity = -1.5;
+// function update(){ 
+// var pos = $(window).scrollTop(); 
+// $('.background').each(function() { 
+//     var $element = $(this);
+//     // subtract some from the height b/c of the padding
+//     var height = $element.height()-18;
+//     $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) +  'px'); 
+//    }); 
+//    };
+
+//  $(window).bind('scroll', update);
