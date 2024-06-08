@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
 
 </head>
+<!-- Inline style is used here since it is only applied to the one element and different across pages -->
 <body style="background-image: url(../Assets/Images/testbg.jpg);">
     <nav class="nav" id="nav">
         <ul>
@@ -16,9 +17,9 @@
             <li id="nav-item-3"><a href="../cyberbullying.html">Cyberbullying</a></li>
             <li id="nav-item-4"><a href="../malware.html">Malware</a></li>
             <li id="nav-item-5"><a href="../phishing.html">Phishing</a></li>
-            <li id="nav-item-5"><a href="index.html">Test Your Knowledge</a></li>
-            <li id="nav-item-5"><a href="../info.html">Info Centre</a></li>
-            <li id="nav-item-5"><a href="../settings.html">Settings</a></li>
+            <li id="nav-item-6"><a href="index.html">Test Your Knowledge</a></li>
+            <li id="nav-item-7"><a href="../info.html">Info Centre</a></li>
+            <li id="nav-item-8"><a href="../settings.html">Settings</a></li>
         </ul>
     </nav>
     <header class="body-header">
@@ -29,6 +30,7 @@
         </div>
         <div class="header-item header-label"><h1>Test Your Knowledge</h1></div>
     </header>
+    <!-- the headerbg element is used so other elements don't go behind the header on page load -->
     <div class="headerbg"></div>
     <!--Content-->
     <div class="content">
@@ -43,11 +45,15 @@
                 <a href="phishing.html"><h3>Phishing</h3>
                     <p>Check if you can identify the real and fake messages and emails</p>
                 </a>
-                <a href="game.html"><h3>Game</h3>
-                    <p>Challenge your knowledge with a game version of these questions</p>
-                </a>
+                <div class="instructions-container">
+                    <h2>Question types</h2>
+                    <input type="checkbox">Multichoice
+                    <input type="radio">Single choice <br>
+                    <p>At least one option must be selected for each question for results</p>
+                </div>
             </div>
         </div>
+       
     </div>
     <footer class="footer" style="position: absolute; bottom: 0;">
         <div class="footer-contents">
