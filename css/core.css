@@ -9,6 +9,14 @@
     font-family: "dyslexic";
     src: url(../Assets/fonts/dyslexic/OpenDyslexic3-Regular.ttf);
 }
+@font-face {
+    font-family: "exo-2";
+    src: url(../Assets/fonts/Exo-2/Exo2-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "monospace";
+    src: url(../Assets/fonts/Roboto-Mono/RobotoMono-VariableFont_wght.ttf);
+}
 
 * {
     /* apply settings with variables for easy modification */
@@ -23,14 +31,15 @@
 :root {
     --mode: #000000;
     --inverted-mode: #ffffff;
-    --bgcolor-1: #333333;
-    --bgcolor-2: #222222;
+    --bgcolor-1: #363232;
+    --bgcolor-2: #1c1919;
     --bgcolor-1-clear: #0a0a0a5f;
     --accent-gray: #3d3d3d;
     --accent-gray-clear: #3d3d3d74;
-    --blue-accent: #0058cc;
-    --red-accent-blur: #b1000081;
-    --dark-blue-accent-clear: #00246880;
+    --blue-accent: #196fe0;
+    --red-accent-blur: #c02525d1;
+    --dark-blue-accent-clear: #0f2c6280;
+    --accent-gray-2: #aa9595;
     --primary-text: #ffffff;
     --secondary-text: #9e9e9e;
 /*other vars for convenience*/
@@ -47,6 +56,7 @@
     --bgcolor-1: #d0d0d0;
     --bgcolor-2: #b0b0b0;
     --bgcolor-1-clear: #ffffff5f;
+    --accent-gray-2: #474747;
     --accent-gray: #a0a0a0;
     --accent-gray-clear: #a0a0a074;
     --blue-accent: #0073ff;
@@ -55,7 +65,38 @@
     --secondary-text: #212121;
     --dark-blue-accent-clear: #0059ff80;
 }
+/* Simple theme no blur and solid colours */
 
+.lightbase {
+    --mode: #ffffff;
+    --inverted-mode: #000000;
+    --bgcolor-1: #d0d0d0;
+    --bgcolor-2: #b0b0b0;
+    --bgcolor-1-clear: #c6c6c6;
+    --accent-gray-2: #474747;
+    --accent-gray: #a0a0a0;
+    --accent-gray-clear: #a0a0a0;
+    --blue-accent: #0073ff;
+    --red-accent-blur: #da1c1c;
+    --primary-text: #000000;
+    --secondary-text: #212121;
+    --dark-blue-accent-clear: #00379e;
+}
+.darkbase {
+    --mode: #000000;
+    --inverted-mode: #ffffff;
+    --bgcolor-1: #363232;
+    --bgcolor-2: #1c1919;
+    --bgcolor-1-clear: #363232;
+    --accent-gray: #3d3d3d;
+    --accent-gray-clear: #3d3d3d;
+    --blue-accent: #196fe0;
+    --red-accent-blur: #c02525;
+    --dark-blue-accent-clear: #133575;
+    --accent-gray-2: #aa9595;
+    --primary-text: #ffffff;
+    --secondary-text: #9e9e9e;
+}
 /*background*/
 #bgVideo {
     position: fixed;
@@ -137,7 +178,7 @@ body,html {
     color: var(--primary-text);
     border-radius: 10px;
     transition: all 0.5s;
-    color: #fff;
+    color: var(--primary-text);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
@@ -161,7 +202,7 @@ body,html {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: var(--inverted-mode);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -350,4 +391,19 @@ body,html {
     100% {
         opacity: 1;
     }
+}
+
+/* specific font classes */
+
+.monospace-font {
+    font-family: 'monospace';
+}
+.standard-font {
+    font-family: 'standard';
+}
+.exo-2-font {
+    font-family: 'exo-2';
+}
+.dyslexic-font {
+    font-family: 'dyslexic';
 }

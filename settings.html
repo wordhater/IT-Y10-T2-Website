@@ -11,7 +11,6 @@
 <body>
     <div class="background">
         <video src="Assets/Video/background01.mp4" id="bgVideo" autoplay loop muted>
-            <!--needs fixing file dosent load-->
     </div>
     <nav class="nav" id="nav">
         <ul>
@@ -41,17 +40,43 @@
         <form action="update-settings">
             <h2>Font</h2>
             <div class="fonts">
-                <input type="radio" class="radio-btn" name="font" value="standard">Standard <br>
-                <input type="radio" class="radio-btn" name="font" value="dyslexic">Dyslexic <br>
+                <label class="radio-container standard-font">
+                    <input type="radio" class="radio-btn" name="font" value="standard" checked="checked">
+                    Standard (OpenSans)
+                </label>
+                <label class="radio-container dyslexic-font">
+                    <input type="radio" class="radio-btn" name="font" value="dyslexic">
+                    Dyslexic (OpenDyslexic3)<br>
+                </label>
+                <label class="radio-container exo-2-font">
+                    <input type="radio" class="radio-btn" name="font" value="exo-2">
+                    Exo 2 (Exo 2)<br>
+                </label>
+                <label class="radio-container monospace-font">
+                    <input type="radio" class="radio-btn" name="font" value="monospace">
+                    Monospace (Roboto Mono)<br>
+                </label>
             </div>
             <h2>Colour Scheme</h2>
             <div class="colours">
-                <input type="radio" class="radio-btn" name="mode" value="0">Dark mode <br>
-                <input type="radio" class="radio-btn" name="mode" value="1">Light mode <br>
+                <label class="radio-container"><input type="radio" class="radio-btn" name="mode" value="darkmode" checked="checked">
+                    Dark mode <br>
+                </label>
+                <label class="radio-container"><input type="radio" class="radio-btn" name="mode" value="lightmode">
+                    Light mode <br>
+                </label>
+                <label class="radio-container"><input type="radio" class="radio-btn" name="mode" value="lightbase">
+                    Basic Light <br>
+                </label>
+                <label class="radio-container"><input type="radio" class="radio-btn" name="mode" value="darkbase">
+                    Basic Dark <br>
+                </label>
             </div>
             <h2>Reduce animations</h2>
             <div class="colours">
-                <input type="checkbox" class="check-btn" name="animations" value="0">Reduce Animations <br>
+                <label><input type="checkbox" class="check-btn" name="animations" value="0">
+                    Reduce Animations <br>
+                </label>
             </div>
         </form>
         <button class="submit-btn" onclick="process_settings()">Update Settings</button>

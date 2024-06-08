@@ -169,10 +169,10 @@ body {
         line-height: 150%;
     }
     .imagewall {
-        margin-left: -100px;
+        width: 70vw;
     }
     .imagewall-container {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 }
 .navshown {
@@ -223,6 +223,10 @@ body {
 #malware01 {
     background-image: url(../Assets/Images/matrix.jpg);
     background-attachment: fixed;
+    
+}
+#malware01 h1 {
+    color: #ffffff;
 }
 #scam-1 {
     background-image: url(../Assets/Images/scam-calls.jpg);
@@ -243,7 +247,8 @@ body {
 /* Imagewall style */
 .imagewall-container {
     display: inline-flex; 
-    align-items: center; 
+    align-items: center;
+    justify-content: center; 
     flex-wrap: wrap; 
     justify-content: center;
 }

@@ -63,8 +63,8 @@ function apply_settings(){
     console.log(settings)
     document.documentElement.style.setProperty('--font', settings[0])
     // set theme
-    if (settings[1] == 1){
-        document.body.classList.add("lightmode")
+    document.body.classList.add(settings[1])
+    if (settings[1] == "lightmode" | settings[1] == "lightbase"){
         try {
             document.querySelectorAll(".lightclass").forEach(element => {
                 element.classList.add("lightmode")
@@ -100,7 +100,7 @@ function process_settings() {
         inputs[0] = document.querySelector('input[name="font"]:checked').value;
     }else{inputs[0] = "standard"}
     if (document.querySelectorAll('input[name="mode"]:checked').length != 0) {
-    inputs[1] = Number(document.querySelector('input[name="mode"]:checked').value);
+    inputs[1] = document.querySelector('input[name="mode"]:checked').value;
     }else{inputs[1] = 0}
     if (document.querySelectorAll('input[name="animations"]:checked').length == 0) {
         console.log(0)
