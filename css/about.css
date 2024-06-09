@@ -30,9 +30,10 @@ body {
     padding-left: 20px;
 
 }
-.hero-box h2::after, .hero-box h1::after {
+/* Old css for typing indicator */
+/* .hero-box h2::after, .hero-box h1::after {
     content: "|";
-}
+} */
 .mission {
     width: 100%;
     height: calc(90vw/1.5);

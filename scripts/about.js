@@ -1,24 +1,4 @@
-// typing effect
-
-let index = 0
-function type(elements, texts, speed){
-    let skips = 0
-    if (animations){
-        for (let i = 0; i<elements.length; i++) {
-            if (index < texts[i].length) {
-                elements[i].innerHTML += texts[i].charAt(index)
-            } else {skips += 1}}
-        index++
-        if (skips != elements.length){
-            setTimeout(() => {type(elements, texts, speed)}, speed)
-        }
-    } else {
-		for (let i = 0; i<elements.length; i++) {
-			elements[i].innerHTML = texts[i]
-		}
-	}
-}
-console.log("about script loaded")
+// Trigger typing animation
 setTimeout(() => {type([document.getElementById('typing'), document.getElementById('typing-2')], ["About Us", "Why this site was built"], 100)}, 1000)
 
 // Jquery Dependent

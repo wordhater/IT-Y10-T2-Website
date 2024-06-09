@@ -25,7 +25,7 @@ function play(id) {
     var audio = document.getElementById(id);
     audio.play();
 }
-
+// copied from prior project: useful to create html elements from javascript
 function create(htmlStr) {
     var frag = document.createDocumentFragment(),
         temp = document.createElement('div');
@@ -36,7 +36,7 @@ function create(htmlStr) {
     return frag;
 }
 
-
+// Nav toggle function
 function activatenav(){
     if (document.getElementById("nav-activator").classList.contains("active")){
         console.log('closing menu')
@@ -105,3 +105,33 @@ function process_settings() {
     location.reload();
 }
 
+// Animations
+
+//typing effect
+
+let index = 0
+function type(elements, texts, speed){
+
+    let skips = 0
+    if (animations){
+      elements.forEach(element => {
+        element.classList.add('typing')
+      });
+        for (let i = 0; i<elements.length; i++) {
+            if (index < texts[i].length) {
+                elements[i].innerHTML += texts[i].charAt(index)
+            } else {skips += 1}}
+        index++
+        if (skips != elements.length){
+            setTimeout(() => {type(elements, texts, speed)}, speed)
+        } else {
+			elements.forEach(element => {
+				element.classList.remove('typing')
+			});
+		}
+    } else {
+		for (let i = 0; i<elements.length; i++) {
+			elements[i].innerHTML = texts[i]
+		}
+	}
+}
