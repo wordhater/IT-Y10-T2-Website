@@ -191,7 +191,9 @@ body,html {
 .nav li a:hover {
     background-color: var(--blue-accent);
     /* this can cause some issues in the nav at smaller sizes */
-    font-size: 25px;
+    /* font-size: 25px; */
+    /* Scale seems to work better here */
+    scale: 1.2;
 }
 /* css to underline the links when hovered */
 .nav a:after {
