@@ -1,4 +1,6 @@
-
+body {
+    height: 0%;
+}
 .content {
     width: 90%;
     background-color: var(--bgcolor-1-clear);

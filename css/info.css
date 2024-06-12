@@ -7,7 +7,9 @@
     font-size: 2vw;
     margin: 20px;
 }
-
+body {
+    height: 0%;
+}
 .search-header {
     width: 100%;
     background-color: var(--dark-blue-accent-clear);
